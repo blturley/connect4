@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id = 'header'>
+
+    <h1>CONNECT 4</h1>
+  
+    <button id = "restart">RESTART</button>
+  
+  </div>
+
+  <div class = 'container'>
+
+    <div class = 'wincounter'><h2 id= 'p1count'></h2></div>
+  
+    <div id="game">
+      <table id="board"></table>
+    </div>
+  
+    
+    <div class = 'wincounter'><h2 id= 'p2count'></h2></div>
+  
+    </div>
+
+    <br>
+
+    <div class = 'playerturn'>
+    <h2 id= 'currentp'>Player 1's turn</h2>
+    </div>
+
+    
+
+  <div class = 'container'>   
+    <form id= 'colorform' class= 'container'>
+      <label for= 'p1color'> Player 1 color
+        <input type = 'text' id= 'p1color'>
+      </label>
+      <label for= 'p2color'> Player 2 color
+        <input type = 'text' id= 'p2color'>
+      </label>
+      <button id= 'start'>START</button> 
+    </form> 
+  </div>
+  
+<script src="connect4.js"></script>
+
+</body>
+</html>

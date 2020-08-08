@@ -1,0 +1,122 @@
+/* game board table */
+
+#board td {
+	width: 50px;
+	height: 50px;
+	border: solid 1px rgba(102, 102, 102, 0.384);
+}
+
+h1 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: aliceblue;
+	text-shadow: 5px 5px 5px black;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece.p1 {
+	background-color: firebrick;
+}
+
+.piece.p2 {
+	background-color: rgb(31, 83, 134);
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+	border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+	background-color: gold;
+}
+
+body {
+	margin: 0;
+	background-color: rgb(132, 154, 155);
+}
+
+#header {
+	padding: 2%;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.377)),
+		url(https://data.1freewallpapers.com/detail/wood-wooden-texture-bw.jpg);
+}
+
+#game {
+	display: flex;
+	width: fit-content;
+}
+
+.container {
+	padding: 3%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+/* game board table */
+
+#board td {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border: solid 1px rgba(102, 102, 102, 0.432);
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+	margin: 5px;
+	width: 80%;
+	height: 80%;
+	border-radius: 100%;
+	transition: ease-in-out 1s;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+	border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+	background-color: rgba(255, 217, 0, 0.247);
+}
+
+h2 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	text-shadow: 2px 2px 10px rgb(66, 66, 66);
+	visibility: hidden;
+}
+
+.wincounter {
+	display: inline-block;
+	margin: auto;
+}
+
+.playerturn {
+	text-align: center;
+	margin: auto;
+}
+
+#restart {
+	visibility: hidden;
+}
+
+#start {
+	display: inline-block;
+	position: absolute;
+	top: 30%;
+	font-size: 50px;
+}
+
+input,
+label {
+	display: block;
+}
+
+input {
+	margin: 10px;
+}
